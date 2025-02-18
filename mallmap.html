@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mall Map</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section id="header">
+    <a href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/SM_Supermalls_Logo.png?20180407040452" class="logo" alt="SM Supermalls Logo">
+    </a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="mallmap.html">Mall Map</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            <li><a href="login.html"><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                style="width: auto;font-size: 16px;color: black;border: none;cursor: pointer;">Login</button></a></li>
+        </ul>
+    </div>
+   </section>
+
+   <section id="page-header">
+    <h2>#Mall Map</h2>
+    <p>The complete road map of mall</p>
+   </section>
+
+   <div class="mall-map">
+        <div class="floor">
+            <div class="floor-title">Ground Floor: Parking</div>
+            <div class="shops">
+                <div class="shop">Main Entrance Parking</div>
+                <div class="shop">Side Entrance Parking</div>
+                <div class="shop">Disabled Parking</div>
+                <div class="shop">Electric Vehicle Charging</div>
+            </div>
+        </div>
+        
+        <div class="floor">
+            <div class="floor-title">1st Floor: Shops & Brands</div>
+            <div class="shops">
+                <div class="shop">Nike</div>
+                <div class="shop">Zara</div>
+                <div class="shop">H&M</div>
+                <div class="shop">Apple Store</div>
+                <div class="shop">Sephora</div>
+                <div class="shop">Adidas</div>
+            </div>
+        </div>
+        
+        <div class="floor">
+            <div class="floor-title">2nd Floor: More Shops</div>
+            <div class="shops">
+                <div class="shop">Bookstore</div>
+                <div class="shop">Electronics Store</div>
+                <div class="shop">Jewelry Shop</div>
+                <div class="shop">Sports Gear</div>
+                <div class="shop">Toy Store</div>
+                <div class="shop">Gift Shop</div>
+            </div>
+        </div>
+        
+        <div class="floor">
+            <div class="floor-title">3rd Floor: Food Court</div>
+            <div class="shops">
+                <div class="shop">McDonald's</div>
+                <div class="shop">Pizza Hut</div>
+                <div class="shop">Starbucks</div>
+                <div class="shop">Subway</div>
+                <div class="shop">Sushi Bar</div>
+                <div class="shop">Burger King</div>
+            </div>
+        </div>
+        
+        <div class="floor">
+            <div class="floor-title">4th Floor: Games & Entertainment</div>
+            <div class="shops">
+                <div class="shop">Arcade</div>
+                <div class="shop">VR Gaming Zone</div>
+                <div class="shop">Billiards</div>
+                <div class="shop">Bowling Alley</div>
+                <div class="shop">Laser Tag</div>
+                <div class="shop">Escape Room</div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; 
+        }
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .logo {
+            height: 100px;
+        }
+        #navbar {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        #navbar a {
+            text-decoration: none;
+            color: black;
+        }
+        #page-header {
+            text-align: center;
+            background-color: #e3e6f3;
+            padding: 40px;
+        }
+        .mall-map {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .floor {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .floor-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .shops {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .shop {
+            background-color: #e9e9e9;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .shop:hover {
+            background-color: #d0d0d0;
+        }
+        .loginbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+    </style>
+<footer class="section-p1">
+   <div class="col">
+    <img class="logo" src="https://drive.google.com/file/d/1joebj3mYezK7qcTT6spQKyhje-bGj1dp/view?usp=sharing" alt="">
+    <h4>Contact</h4>
+    <p><strong>Address: </strong> marathahalli, Street 32, bengaluru</p>
+    <p><strong>Phone:</strong> +91 2222 99998/(+91) 91 2345 998009</p>
+    <p><strong>Hours:</strong> 10:00 -10:00 , mon - sun</p>
+   
+   <div class="follow">
+    <h4>Follow us</h4>
+    <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest"></i>
+    </div>
+</div>
+   </div>
+
+<div class="col">
+    <h4>About</h4>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Condition</a>
+    <a href="#">Contact Us</a>
+</div>
+
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign in</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+</div>
+
+
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+        <img src="https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/pay/app.jpg" alt="">
+        <img src="https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/pay/play.jpg" alt="">
+    </div>
+
+   <p>Secured Payment Gatways</p>
+   <img src="https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/main/img/pay/pay.png" alt="">
+
+</div>
+</footer> 
+
+
+
+
+
+
+   <script src="script.js"></script>
+</body>
+</html>
